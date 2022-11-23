@@ -250,7 +250,15 @@
       .swiper {
         width: 300px;
         height: 350px;
-       
+      }
+      .mit {
+        transform: translate(-50%, -50%);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+      }
+      html{
+        overflow-x: hidden;
       }
     </style>
     <link
@@ -274,22 +282,23 @@
     />
   </head>
   <body>
-    <div
-      class="flex bg-[#EFB59E] text-black pl-[30px] w-[100%] h-[80px] items-center overflow-x-hidden justify-between float-left z-[100] fixed list-none"
+    <div id="top"
+      class=" flex bg-[#EFB59E] text-black lg:px-7 w-full h-20 items-center overflow-x-hidden float-left z-[100] fixed list-none"
     >
       <!-- anh -->
+      <!-- 1 -->
 
-      <div class="hidden sm:block">
+      <div class="hidden lg:block lg:w-full">
         <div
-          class="w-[150px] h-[50px] bg-[#b2583a] text-white text-2xl flex justify-center items-center gap-[10px]"
+          class="w-40 h-12 bg-[#b2583a] text-white text-2xl flex justify-center items-center gap-2.5"
         >
           <div>
-            <img src="./image/anh15.svg" style="width: 25px; height: 25px" />
+            <img class="w-6 h-6" src="./image/anh15.svg" />
           </div>
-          <div style="font-weight: bold">Silco</div>
+          <div class="font-bold">Silco</div>
         </div>
       </div>
-      <div class="block sm:hidden">
+      <!-- <div class="block lg:hidden w">
         <div class="flex justify-between relative">
           <div onclick="toggleModal4()">
             <i class="fas fa-bars"></i>
@@ -297,7 +306,7 @@
           <div id="modal4">
             <div onclick="toggleModal4()" id="closemodal4">&#10006;</div>
             <div
-              class="h-[100%] sm:flex justify-center text-center items-center gap-[40px] pt-[10%] text-2xl leading-[1cm]"
+              class="h-[100%] lg:flex justify-center text-center items-center gap-10 pt-[10%] text-2xl leading-[1cm]"
             >
               <div class="text-white hover:text-[#EFB59E]">
                 <a href="/" title="HOME">HOME</a>
@@ -324,294 +333,542 @@
             modal4.classList.toggle("show4");
           }
         </script>
-      </div>
-
-      <div class="w-[66%] items-center justify-between flex">
+      </div> -->
+      <!-- 1   -->
+      <div class="items-center flex lg:gap-10">
         <!-- 1 -->
-        <div class="sm:flex gap-[50px] hidden sm:block text-xl">
+        <div class="lg:flex gap-10 hidden lg:block text-xl">
           <div><a href="/" title="HOME">HOME</a></div>
           <div><a href="/about.html" title="about">ABOUT</a></div>
           <div><a href="/services.html" title="services">SERVICES</a></div>
           <div><a href="/team.html" title="team">TEAM</a></div>
           <div><a href="/contact.html" title="HOME">CONTACT</a></div>
         </div>
-        <div class="block sm:hidden">
+        <!-- <div class="  w-[70%] block lg:hidden">
+            <div
+              class="w-40 h-12 bg-[#b2583a] text-white flex justify-center items-center gap-3"
+            >
+              <div>
+                <img
+                  src="./image/anh15.svg"
+                  style="width: 20px; height: 20px"
+                />
+              </div>
+              <div style="font-weight: bold">Silco</div>
+            </div>
+          </div> -->
+        <!-- 2 -->
+
+        <div class="lg:flex gap-[30px] hidden lg:block">
+          <div class="flex justify-between relative">
+            <div onclick="toggleModal()">
+              <i class="fa-solid fa-location-arrow"></i>
+            </div>
+            <div id="modal">
+              <div onclick="toggleModal()" id="closemodal1">&#10006;</div>
+              <div
+                class="h-[100%] flex justify-center text-center items-center gap-[40px]"
+              >
+                <div class="content">
+                  <div class="content1">
+                    <div><i class="fa-solid fa-location-arrow"></i></div>
+                    <div>Số 4 Hanoi,Vietnam</div>
+                  </div>
+                  <div class="content2">
+                    <div><i class="fas fa-globe-asia"></i></div>
+                    <div><i class="far fa-map"></i></div>
+                    <div><i class="fal fa-map-marker-lgile"></i></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <script>
+            function toggleModal() {
+              const modal = document.querySelector("#modal");
+              modal.classList.toggle("show");
+            }
+          </script>
+
+          <div class="flex justify-between relative">
+            <div onclick="toggleModal2()">
+              <i class="fas fa-share-alt"></i>
+            </div>
+            <div id="modal2">
+              <div onclick="toggleModal2()" id="closemodal2">&#10006;</div>
+              <div
+                class="h-[100%] flex justify-center text-3xl text-center items-center gap-[40px]"
+              >
+                <div>
+                  <i class="icon"><i class="fa-brands fa-facebook"></i></i>
+                </div>
+                <div class="icon"><i class="fa-brands fa-twitter"></i></div>
+              </div>
+            </div>
+          </div>
+
+          <script>
+            function toggleModal2() {
+              const modal2 = document.querySelector("#modal2");
+
+              modal2.classList.toggle("show2");
+            }
+          </script>
+
+          <div class="flex justify-between relative">
+            <div onclick="toggleModal5()">
+              <i class="fa-sharp fa-solid fa-envelope"></i>
+            </div>
+            <div id="modal5">
+              <div onclick="toggleModal5()" id="closemodal5">&#10006;</div>
+              <div
+                class="h-[100%] text-xl px-[10%] py-[5%] gap-[40px] leading-[1.5cm]"
+              >
+                <div>Contact Us</div>
+                <div>
+                  Fill out the form or send a direct email to:
+                  Newsoco2021@gmail.com
+                </div>
+                <div class="flex gap-[75px] justify-between">
+                  <div class="fullname">
+                    <div class="fullname1">Full Name</div>
+                    <div class="fullname2">
+                      <input
+                        id="fullnamea"
+                        type="text"
+                        placeholder="Full name"
+                        style="
+                          height: 40px;
+                          width: 350px;
+                          font-size: 18px;
+                          padding: 20px;
+                        "
+                      />
+                    </div>
+                  </div>
+                  <div class="emailadd">
+                    <div class="emailadd1">Email Address</div>
+                    <div class="emailadd2">
+                      <input
+                        id="emailadda"
+                        type="text"
+                        placeholder="Email address"
+                        style="
+                          height: 40px;
+                          width: 350px;
+                          font-size: 18px;
+                          padding: 20px;
+                        "
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <div class="description">
+                    <div class="description1">Description</div>
+                    <div class="description2">
+                      <textarea
+                        id="descriptiona"
+                        type="text"
+                        placeholder="Description"
+                        style="height: 140px; width: 100%; font-size: 18px"
+                      ></textarea>
+                    </div>
+                  </div>
+                </div>
+
+                <div>
+                  <button
+                    class="h-40px bg-[#ac6c53] w-[100%]"
+                    href="#"
+                    onclick="sendtn()"
+                  >
+                    SEND
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <script>
+            function toggleModal5() {
+              const modal5 = document.querySelector("#modal5");
+              modal5.classList.toggle("show5");
+            }
+          </script>
+          <script>
+            (function () {
+              emailjs.init("nuQGF_xpg5hYZkcr1");
+            })();
+
+            function sendtn() {
+              const fullname = document.querySelector("#fullnamea");
+              const emailadd = document.querySelector("#emailadda");
+              const description = document.querySelector("#descriptiona");
+
+              if (fullname.value === "") {
+                fullname.focus();
+                fullname.placeholder = "Tôi nên gọi bạn bằng...";
+                return;
+              }
+              if (emailadd.value === "" || !emailadd.value.includes("@")) {
+                emailadd.focus();
+                emailadd.placeholder = "Tôi sẽ trả lời bạn qua email...";
+                return;
+              }
+              if (description.value === "") {
+                description.focus();
+                description.placeholder = "Đừng bỏ đi mà không nói lời nào 😥";
+                return;
+              }
+              var params = {
+                fullname: fullname.value || "nothing",
+                emailadd: emailadd.value || "nothing",
+                description: description.value || "nothing",
+              };
+
+              const serviceID = "service_ogz9a9f";
+              const templateID = "template_y77vtyo";
+
+              emailjs
+                .send(serviceID, templateID, params)
+                .then((res) => {
+                  console.log(res);
+                  fullname.value = "";
+                  emailadd.value = "";
+                  description.value = "";
+                })
+                .catch((err) => console.log(err));
+            }
+          </script>
+          <div class="flex justify-between relative">
+            <div onclick="toggleModal3()">
+              <i class="fa-solid fa-phone"></i>
+            </div>
+            <div id="modal3">
+              <div onclick="toggleModal3()" id="closemodal3">&#10006;</div>
+              <div
+                class="h-[100%] flex justify-center text-center items-center gap-[40px]"
+              >
+                Phone : 0969890605
+              </div>
+            </div>
+          </div>
+
+          <script>
+            function toggleModal3() {
+              const modal3 = document.querySelector("#modal3");
+              modal3.classList.toggle("show3");
+            }
+          </script>
+        </div>
+      </div>
+      <div
+        class="block lg:hidden flex items-center w-full justify-between items-center mx-5"
+      >
+        <div class="flex justify-between relative">
+          <div onclick="toggleModal4()">
+            <i class="fas fa-bars"></i>
+          </div>
+          <div id="modal4">
+            <div onclick="toggleModal4()" id="closemodal4">&#10006;</div>
+            <div
+              class="h-[100%] lg:flex justify-center text-center items-center gap-10 pt-[10%] text-2xl leading-[1cm]"
+            >
+              <div class="text-white hover:text-[#EFB59E]">
+                <a href="/" title="HOME">HOME</a>
+              </div>
+              <div class="text-white hover:text-[#EFB59E]">
+                <a href="/about.html" title="about">ABOUT</a>
+              </div>
+              <div class="text-white hover:text-[#EFB59E]">
+                <a href="/services.html" title="services">SERVICES</a>
+              </div>
+              <div class="text-white hover:text-[#EFB59E]">
+                <a href="/team.html" title="team">TEAM</a>
+              </div>
+              <div class="text-white hover:text-[#EFB59E]">
+                <a href="/contact.html" title="HOME">CONTACT</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <script>
+          function toggleModal4() {
+            const modal4 = document.querySelector("#modal4");
+            modal4.classList.toggle("show4");
+          }
+        </script>
+        <div>
           <div
-            class="w-[100px] h-[35px] bg-[#b2583a] text-white flex justify-center items-center gap-[10px]"
+            class="w-40 h-12 bg-[#b2583a] text-white flex justify-center items-center gap-3"
           >
             <div>
               <img src="./image/anh15.svg" style="width: 20px; height: 20px" />
             </div>
-            <div style="font-weight: bold">Silco</div>
+            <div class="font-bold">Silco</div>
           </div>
         </div>
-
-        <!-- 2 -->
-
-        <div class="pr-[20px] cursor-pointer">
-          <div class="sm:flex gap-[30px] hidden sm:block">
-            <div class="flex justify-between relative">
-              <div onclick="toggleModal()">
-                <i class="fa-solid fa-location-arrow"></i>
-              </div>
-              <div id="modal">
-                <div onclick="toggleModal()" id="closemodal1">&#10006;</div>
-                <div
-                  class="h-[100%] flex justify-center text-center items-center gap-[40px]"
-                >
-                  <div class="content">
-                    <div class="content1">
-                      <div><i class="fa-solid fa-location-arrow"></i></div>
-                      <div>Số 4 Hanoi,Vietnam</div>
-                    </div>
-                    <div class="content2">
-                      <div><i class="fas fa-globe-asia"></i></div>
-                      <div><i class="far fa-map"></i></div>
-                      <div><i class="fal fa-map-marker-smile"></i></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <script>
-              function toggleModal() {
-                const modal = document.querySelector("#modal");
-                modal.classList.toggle("show");
-              }
-            </script>
-
-            <div class="flex justify-between relative">
-              <div onclick="toggleModal2()">
-                <i class="fas fa-share-alt"></i>
-              </div>
-              <div id="modal2">
-                <div onclick="toggleModal2()" id="closemodal2">&#10006;</div>
-                <div
-                  class="h-[100%] flex justify-center text-3xl text-center items-center gap-[40px]"
-                >
-                  <div>
-                    <i class="icon"><i class="fa-brands fa-facebook"></i></i>
-                  </div>
-                  <div class="icon"><i class="fa-brands fa-twitter"></i></div>
-                </div>
-              </div>
-            </div>
-
-            <script>
-              function toggleModal2() {
-                const modal2 = document.querySelector("#modal2");
-
-                modal2.classList.toggle("show2");
-              }
-            </script>
-
-            <div class="flex justify-between relative">
-              <div onclick="toggleModal5()">
-                <i class="fa-sharp fa-solid fa-envelope"></i>
-              </div>
-              <div id="modal5">
-                <div onclick="toggleModal5()" id="closemodal5">&#10006;</div>
-                <div
-                  class="h-[100%] text-xl px-[10%] py-[5%] gap-[40px] leading-[1.5cm]"
-                >
-                  <div>Contact Us</div>
-                  <div>
-                    Fill out the form or send a direct email to:
-                    Newsoco2021@gmail.com
-                  </div>
-                  <div class="flex gap-[75px] justify-between">
-                    <div class="fullname">
-                      <div class="fullname1">Full Name</div>
-                      <div class="fullname2">
-                        <input
-                          id="fullnamea"
-                          type="text"
-                          placeholder="Full name"
-                          style="
-                            height: 40px;
-                            width: 350px;
-                            font-size: 18px;
-                            padding: 20px;
-                          "
-                        />
-                      </div>
-                    </div>
-                    <div class="emailadd">
-                      <div class="emailadd1">Email Address</div>
-                      <div class="emailadd2">
-                        <input
-                          id="emailadda"
-                          type="text"
-                          placeholder="Email address"
-                          style="
-                            height: 40px;
-                            width: 350px;
-                            font-size: 18px;
-                            padding: 20px;
-                          "
-                        />
-                      </div>
-                    </div>
-                  </div>
-                  <div>
-                    <div class="description">
-                      <div class="description1">Description</div>
-                      <div class="description2">
-                        <textarea
-                          id="descriptiona"
-                          type="text"
-                          placeholder="Description"
-                          style="height: 140px; width: 100%; font-size: 18px"
-                        ></textarea>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div>
-                    <button
-                      class="h-40px bg-[#ac6c53] w-[100%]"
-                      href="#"
-                      onclick="sendtn()"
-                    >
-                      SEND
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <script>
-              function toggleModal5() {
-                const modal5 = document.querySelector("#modal5");
-                modal5.classList.toggle("show5");
-              }
-            </script>
-            <script>
-              (function () {
-                emailjs.init("nuQGF_xpg5hYZkcr1");
-              })();
-
-              function sendtn() {
-                const fullname = document.querySelector("#fullnamea");
-                const emailadd = document.querySelector("#emailadda");
-                const description = document.querySelector("#descriptiona");
-
-                if (fullname.value === "") {
-                  fullname.focus();
-                  fullname.placeholder = "Tôi nên gọi bạn bằng...";
-                  return;
-                }
-                if (emailadd.value === "" || !emailadd.value.includes("@")) {
-                  emailadd.focus();
-                  emailadd.placeholder = "Tôi sẽ trả lời bạn qua email...";
-                  return;
-                }
-                if (description.value === "") {
-                  description.focus();
-                  description.placeholder =
-                    "Đừng bỏ đi mà không nói lời nào 😥";
-                  return;
-                }
-                var params = {
-                  fullname: fullname.value || "nothing",
-                  emailadd: emailadd.value || "nothing",
-                  description: description.value || "nothing",
-                };
-
-                const serviceID = "service_ogz9a9f";
-                const templateID = "template_y77vtyo";
-
-                emailjs
-                  .send(serviceID, templateID, params)
-                  .then((res) => {
-                    console.log(res);
-                    fullname.value = "";
-                    emailadd.value = "";
-                    description.value = "";
-                  })
-                  .catch((err) => console.log(err));
-              }
-            </script>
-            <div class="flex justify-between relative">
-              <div onclick="toggleModal3()">
-                <i class="fa-solid fa-phone"></i>
-              </div>
-              <div id="modal3">
-                <div onclick="toggleModal3()" id="closemodal3">&#10006;</div>
-                <div
-                  class="h-[100%] flex justify-center text-center items-center gap-[40px]"
-                >
-                  Phone : 0969890605
-                </div>
-              </div>
-            </div>
-
-            <script>
-              function toggleModal3() {
-                const modal3 = document.querySelector("#modal3");
-                modal3.classList.toggle("show3");
-              }
-            </script>
+        <div class="flex justify-center text-center items-center relative">
+          <div onclick="toggleModal6()">
+            <i class="fas fa-ellipsis-v"></i>
           </div>
-          <div class="block sm:hidden flex gap-[20px] cursor-pointer">
-            <div class="flex justify-between relative">
-              <div onclick="toggleModal1()">
-                <i class="fa-solid fa-location-arrow"></i>
-              </div>
-              <div id="modal1">
-                <div onclick="toggleModal1()" id="closemodal1">&#10006;</div>
-                <div
-                  class="h-[100%] flex justify-center text-center items-center gap-[40px]"
-                >
-                  <div class="content">
-                    <div class="content1">
-                      <div><i class="fa-solid fa-location-arrow"></i></div>
-                      <div>Số 4 Hanoi,Vietnam</div>
-                    </div>
-                    <div class="content2">
-                      <div><i class="fas fa-globe-asia"></i></div>
-                      <div><i class="far fa-map"></i></div>
-                      <div><i class="fal fa-map-marker-smile"></i></div>
+          <div id="modal6">
+            <div onclick="toggleModal6()" id="closemodal6">&#10006;</div>
+            <div
+              class="h-[100%] flex justify-center text-center items-center gap-[40px]"
+            >
+              <div class="flex justify-between relative">
+                <div onclick="toggleModal()">
+                  <i class="fa-solid fa-location-arrow"></i>
+                </div>
+                <div id="modal">
+                  <div onclick="toggleModal()" id="closemodal1">&#10006;</div>
+                  <div
+                    class="h-[100%] flex justify-center text-center items-center gap-[40px]"
+                  >
+                    <div class="content">
+                      <div class="content1">
+                        <div><i class="fa-solid fa-location-arrow"></i></div>
+                        <div>Số 4 Hanoi,Vietnam</div>
+                      </div>
+                      <div class="content2">
+                        <div><i class="fas fa-globe-asia"></i></div>
+                        <div><i class="far fa-map"></i></div>
+                        <div><i class="fal fa-map-marker-lgile"></i></div>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
 
-            <script>
-              function toggleModal1() {
-                const modal1 = document.querySelector("#modal1");
-                modal1.classList.toggle("show1");
-              }
-            </script>
-            <div class="flex justify-between relative">
-              <div onclick="toggleModal6()">
-                <i class="fa-solid fa-phone"></i>
-              </div>
-              <div id="modal6">
-                <div onclick="toggleModal6()" id="closemodal6">&#10006;</div>
-                <div
-                  class="h-[100%] flex justify-center text-center items-center gap-[40px]"
-                >
-                  Phone : 0969890605
+              <script>
+                function toggleModal() {
+                  const modal = document.querySelector("#modal");
+                  modal.classList.toggle("show");
+                }
+              </script>
+
+              <div class="flex justify-between relative">
+                <div onclick="toggleModal2()">
+                  <i class="fas fa-share-alt"></i>
+                </div>
+                <div id="modal2">
+                  <div onclick="toggleModal2()" id="closemodal2">&#10006;</div>
+                  <div
+                    class="h-[100%] flex justify-center text-3xl text-center items-center gap-[40px]"
+                  >
+                    <div>
+                      <i class="icon"><i class="fa-brands fa-facebook"></i></i>
+                    </div>
+                    <div class="icon"><i class="fa-brands fa-twitter"></i></div>
+                  </div>
                 </div>
               </div>
-            </div>
 
-            <script>
-              function toggleModal6() {
-                const modal6 = document.querySelector("#modal6");
-                modal6.classList.toggle("show6");
-              }
-            </script>
+              <script>
+                function toggleModal2() {
+                  const modal2 = document.querySelector("#modal2");
+
+                  modal2.classList.toggle("show2");
+                }
+              </script>
+
+              <div class="flex justify-between relative">
+                <div onclick="toggleModal5()">
+                  <i class="fa-sharp fa-solid fa-envelope"></i>
+                </div>
+                <div id="modal5">
+                  <div onclick="toggleModal5()" id="closemodal5">&#10006;</div>
+                  <div
+                    class="h-[100%] text-xl px-[10%] py-[5%] gap-[40px] leading-[1.5cm]"
+                  >
+                    <div>Contact Us</div>
+                    <div>
+                      Fill out the form or send a direct email to:
+                      Newsoco2021@gmail.com
+                    </div>
+                    <div class="flex gap-[75px] justify-between">
+                      <div class="fullname">
+                        <div class="fullname1">Full Name</div>
+                        <div class="fullname2">
+                          <input
+                            id="fullnamea"
+                            type="text"
+                            placeholder="Full name"
+                            style="
+                              height: 40px;
+                              width: 350px;
+                              font-size: 18px;
+                              padding: 20px;
+                            "
+                          />
+                        </div>
+                      </div>
+                      <div class="emailadd">
+                        <div class="emailadd1">Email Address</div>
+                        <div class="emailadd2">
+                          <input
+                            id="emailadda"
+                            type="text"
+                            placeholder="Email address"
+                            style="
+                              height: 40px;
+                              width: 350px;
+                              font-size: 18px;
+                              padding: 20px;
+                            "
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="description">
+                        <div class="description1">Description</div>
+                        <div class="description2">
+                          <textarea
+                            id="descriptiona"
+                            type="text"
+                            placeholder="Description"
+                            style="height: 140px; width: 100%; font-size: 18px"
+                          ></textarea>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div>
+                      <button
+                        class="h-40px bg-[#ac6c53] w-[100%]"
+                        href="#"
+                        onclick="sendtn()"
+                      >
+                        SEND
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <script>
+                function toggleModal5() {
+                  const modal5 = document.querySelector("#modal5");
+                  modal5.classList.toggle("show5");
+                }
+              </script>
+              <script>
+                (function () {
+                  emailjs.init("nuQGF_xpg5hYZkcr1");
+                })();
+
+                function sendtn() {
+                  const fullname = document.querySelector("#fullnamea");
+                  const emailadd = document.querySelector("#emailadda");
+                  const description = document.querySelector("#descriptiona");
+
+                  if (fullname.value === "") {
+                    fullname.focus();
+                    fullname.placeholder = "Tôi nên gọi bạn bằng...";
+                    return;
+                  }
+                  if (emailadd.value === "" || !emailadd.value.includes("@")) {
+                    emailadd.focus();
+                    emailadd.placeholder = "Tôi sẽ trả lời bạn qua email...";
+                    return;
+                  }
+                  if (description.value === "") {
+                    description.focus();
+                    description.placeholder =
+                      "Đừng bỏ đi mà không nói lời nào 😥";
+                    return;
+                  }
+                  var params = {
+                    fullname: fullname.value || "nothing",
+                    emailadd: emailadd.value || "nothing",
+                    description: description.value || "nothing",
+                  };
+
+                  const serviceID = "service_ogz9a9f";
+                  const templateID = "template_y77vtyo";
+
+                  emailjs
+                    .send(serviceID, templateID, params)
+                    .then((res) => {
+                      console.log(res);
+                      fullname.value = "";
+                      emailadd.value = "";
+                      description.value = "";
+                    })
+                    .catch((err) => console.log(err));
+                }
+              </script>
+              <div class="flex justify-between relative">
+                <div onclick="toggleModal3()">
+                  <i class="fa-solid fa-phone"></i>
+                </div>
+                <div id="modal3">
+                  <div onclick="toggleModal3()" id="closemodal3">&#10006;</div>
+                  <div
+                    class="h-[100%] flex justify-center text-center items-center gap-[40px]"
+                  >
+                    Phone : 0969890605
+                  </div>
+                </div>
+              </div>
+
+              <script>
+                function toggleModal3() {
+                  const modal3 = document.querySelector("#modal3");
+                  modal3.classList.toggle("show3");
+                }
+              </script>
+            </div>
           </div>
         </div>
+        <script>
+          function toggleModal6() {
+            const modal6 = document.querySelector("#modal6");
+            modal6.classList.toggle("show6");
+          }
+        </script>
       </div>
+
+      <!-- <div class="flex justify-between relative">
+                <div onclick="toggleModal1()">
+                  <i class="fa-solid fa-location-arrow"></i>
+                </div>
+                <div id="modal1">
+                  <div onclick="toggleModal1()" id="closemodal1">&#10006;</div>
+                  <div
+                    class="h-[100%] flex justify-center text-center items-center gap-[40px]"
+                  >
+                    <div class="content">
+                      <div class="content1">
+                        <div><i class="fa-solid fa-location-arrow"></i></div>
+                        <div>Số 4 Hanoi,Vietnam</div>
+                      </div>
+                      <div class="content2">
+                        <div><i class="fas fa-globe-asia"></i></div>
+                        <div><i class="far fa-map"></i></div>
+                        <div><i class="fal fa-map-marker-lgile"></i></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <script>
+                function toggleModal1() {
+                  const modal1 = document.querySelector("#modal1");
+                  modal1.classList.toggle("show1");
+                }
+              </script> -->
     </div>
+
     <!-- phan 2 -->
 
-    <div class="relative text-white hidden sm:block pt-[80px]">
+    <!-- <div class="relative text-white hidden lg:block pt-[80px]">
       <div>
         <img
           class="w-[100%] block h-[600px] object-cover bg-cover bg-no-repeat"
@@ -620,7 +877,7 @@
       </div>
       <div class="absolute top-[1px] left-[5%] translate-y-1/2 translate-x-1/2">
         <div
-          class="sm:flex justify-center border-y-[12px] py-[30px] mx-[20px] text-8xl font-bold"
+          class="lg:flex justify-center border-y-[12px] py-[30px] mx-[20px] text-8xl font-bold"
         >
           SILCO M&E
         </div>
@@ -633,34 +890,32 @@
           </div>
         </div>
       </div>
-    </div>
-    <div class="pt-[80px] relative text-white block sm:hidden">
+    </div> -->
+    <!-- block lg:hidden -->
+    <div  class="pt-[80px] relative text-white">
       <div>
         <img
-          class="w-[100%] block h-[300px] object-cover bg-cover bg-no-repeat"
+          class="w-[100%] lg:h-[600px] block object-cover bg-cover bg-no-repeat"
           src="image/anh21.jpg"
         />
       </div>
-      <div
-        class="absolute top-[15%] left-[12%] translate-y-1/2 translate-x-1/5"
-      >
-        <span
-          class="flex justify-center border-y-[5px] py-[10px]  text-4xl font-bold"
+      <div class="mit">
+        <div
+          class="justify-center flex lg:text-8xl font-bold lg:border-y-8 border-y-2 text-3xl my"
         >
           SILCO M&E
-        </span>
-        <div class="flex justify-center   text-xl">
-          Chất lượng - Chuyên nghiệp - Khác biệt
         </div>
-        <div class="flex justify-center   text-xl">
+        <div class="justify-center flex lg:text-3xl text-xs pt-7 w-full">
+          Chất lượng-Chuyên nghiệp-Khác biệt
+        </div>
+        <div class="justify-center flex lg:text-2xl text-xs lg:pt-7 pt-2">
           Hotline : 0969.890.605
         </div>
       </div>
     </div>
-
-    <div class="bg-[#fff] min-h-[1000px] pb-[50px] ">
+    <div id="mid" class="bg-[#fff] min-h-[1000px] pb-[50px]">
       <div
-        class="text-4xl items-center justify-center pt-[80px] flex  pb-[15px] border-b-[6px] border-[#b2583a] mx-[42%] "
+        class="text-4xl items-center justify-center pt-[80px] flex pb-[15px] border-b-[6px] border-[#b2583a] mx-[42%]"
       >
         ABOUT
       </div>
@@ -684,7 +939,7 @@
           lạnh, head pump, chiller, HVAC. <br />- Khí nén, thủy khí, thủy lực.
           <br />- Cơ khí chế tạo, nguội sửa chữa, cán ren đường ống cấp nước,
           cứu hoả. <br />- Thu mua vật tư, máy móc, thiết bị công trình, dự án,
-          nhà máy, hàng thanh lý, phế liệu.... <br />- Cắt Plasma, hàn TIG, TIG
+          nhà máy, hàng thanh lý, phế liệu.... <br />- Cắt Plalga, hàn TIG, TIG
           lạnh, hàn điện, hàn hơi. <br />- Thi công, bảo trì hệ thống pin năng
           lượng mặt trời(rooptop, solar farm). <br />- Lắp đặt, bảo trì, sửa
           chữa các hệ thống bơm, van, quạt công nghiệp, tủ điện, hệ thống rũ
@@ -693,24 +948,69 @@
           Composite, PVC, PP, HDPE, SUS, Kim Loại. <br />- Chuyển văn phòng,
           chuyển nhà trọn gói, tháo dỡ hoàn trả mặt bằng.
         </div>
-
+  
         <div class="swiper mySwiper">
           <div class="swiper-wrapper">
-            <div class="swiper-slide"><img class="lg:block w-[300px] h-[400px] object-cover" src="image/anh1.jpg" /></div>
-            <div class="swiper-slide"><img class="lg:block w-[300px] h-[400px] object-cover" src="image/anh1.jpg" /></div>
-            <div class="swiper-slide"><img class="block w-[300px] h-[400px] object-cover" src="image/anh1.jpg" /></div>
-            <div class="swiper-slide"><img class="block w-[300px] h-[400px] object-cover" src="image/anh1.jpg" /></div>
-            <div class="swiper-slide"><img class="block w-[300px] h-[400px] object-cover"src="image/anh1.jpg" /></div>
-            <div class="swiper-slide"><img class="block w-[300px] h-[400px] object-cover" src="image/anh1.jpg" /></div>
-            <div class="swiper-slide"><img class="block w-[300px] h-[400px] object-cover" src="image/anh1.jpg" /></div>
-            <div class="swiper-slide"><img class="block w-[300px] h-[400px] object-cover" src="image/anh1.jpg" /></div>
-            <div class="swiper-slide"><img class="block w-[300px] h-[400px] object-cover" src="image/anh1.jpg" /></div>
+            <div class="swiper-slide">
+              <img
+                class="lg:block w-[300px] h-[400px] object-cover"
+                src="image/anh1.jpg"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                class="lg:block w-[300px] h-[400px] object-cover"
+                src="image/anh1.jpg"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                class="block w-[300px] h-[400px] object-cover"
+                src="image/anh1.jpg"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                class="block w-[300px] h-[400px] object-cover"
+                src="image/anh1.jpg"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                class="block w-[300px] h-[400px] object-cover"
+                src="image/anh1.jpg"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                class="block w-[300px] h-[400px] object-cover"
+                src="image/anh1.jpg"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                class="block w-[300px] h-[400px] object-cover"
+                src="image/anh1.jpg"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                class="block w-[300px] h-[400px] object-cover"
+                src="image/anh1.jpg"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                class="block w-[300px] h-[400px] object-cover"
+                src="image/anh1.jpg"
+              />
+            </div>
           </div>
         </div>
-
+  
         <!-- Swiper JS -->
         <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-
+  
         <!-- Initialize Swiper -->
         <script>
           var swiper = new Swiper(".mySwiper", {
@@ -732,5 +1032,250 @@
         </script>
       </div>
     </div>
+    <div id="bot" class=" min-h-[800px] justify-center bg-[#ebebeb] text-center">
+      <div
+        class="text-4xl items-center justify-center pt-[80px] flex pb-[15px] border-b-[6px] border-[#b2583a] mx-[42%]"
+      >
+        SERVICES
+      </div>
+      <div
+        class="lg:px-[200px] py-[100px] justify-between items-center lg:flex"
+      >
+        <div class="lg:w-[300px] w-full justify-center items-center">
+          <div class="flex justify-center items-center mb-4">
+            <img
+              class="w-[180px] h-[180px] rounded-full object-cover"
+              src="image/anh16.webp"
+            />
+          </div>
+          <div class="lg:text-2xl font-bold lg:h-[70px]">
+            Thiết bị điện công nghiệp - dân dụng
+          </div>
+          <div class="">Lắp đặt các thiết bị điện gia đình</div>
+          <div>
+            <a
+              href="#"
+              class="bg-[#ac6c53] text-white py-2 px-8 text-align inline-block text-xl mx-0.5 my-5"
+              >LEARN MORE</a
+            >
+          </div>
+        </div>
+        <div class="lg:w-[300px] w-full justify-center items-center">
+          <div class="flex justify-center items-center mb-4">
+            <img
+              class="w-[180px] h-[180px] rounded-full object-cover"
+              src="image/anh17.webp"
+            />
+          </div>
+          <div class="lg:text-2xl font-bold lg:h-[70px] h-[30px]">
+            Xử lí sự cố ống nước
+          </div>
+          <div>Xử lí các mối hàn rò rỉ, thấm ngấm</div>
+          <div>
+            <a
+              href="#"
+              class="bg-[#ac6c53] text-white py-2 px-8 text-align inline-block text-xl mx-0.5 my-5"
+              >LEARN MORE</a
+            >
+          </div>
+        </div>
+        <div class="lg:w-[300px] w-full justify-center items-center">
+          <div class="flex justify-center items-center mb-4">
+            <img
+              class="w-[180px] h-[180px] rounded-full object-cover"
+              src="image/anh18.webp"
+            />
+          </div>
+          <div class="lg:text-2xl font-bold lg:h-[70px]">
+            Xử lí các sự cố tủ điện, bơm..
+          </div>
+          <div>Thay thế vòng bi, mạch điều khiển</div>
+          <div>
+            <a
+              href="#"
+              class="bg-[#ac6c53] text-white py-2 px-8 text-align inline-block text-xl mx-0.5 my-5"
+              >LEARN MORE</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="midtobe"
+    class="min-h-[800px] justify-center items-center text-center bg-[#fff]"
+  >
+    <div
+      class="text-4xl items-center justify-center pt-[80px] flex pb-[15px] border-b-[6px] border-[#b2583a] mx-[42%]"
+    >
+      PROJECTS
+    </div>
+    <div class="pt-8 justify-between lg:flex items-center gap-10 lg:mx-10 mx-20 pb-10  ">
+      <div class="">
+        <div class="pb-5 flex justify-center ">
+          <img class="w-[260px] h-[260px]" src="image/anh1.jpg" />
+        </div>
+        <div>Đội ngũ</div>
+        <div class="pb-10">
+          This is one of the team member slots you can have for your company.
+          You can replace their picture and add any text you want here for
+          describing your employees.
+        </div>
+      </div>
+      <div class="">
+        <div class="pb-5 flex justify-center">
+          <img class="w-[260px] h-[260px]" src="image/anh1.jpg" />
+        </div>
+        <div>Đội ngũ</div>
+        <div class="pb-10">
+          This is one of the team member slots you can have for your company.
+          You can replace their picture and add any text you want here for
+          describing your employees.
+        </div>
+      </div>
+      <div class="">
+        <div class="pb-5 flex justify-center ">
+          <img class="w-[260px] h-[260px]" src="image/anh1.jpg" />
+        </div>
+        <div>Đội ngũ</div>
+        <div class="pb-10">
+          This is one of the team member slots you can have for your company.
+          You can replace their picture and add any text you want here for
+          describing your employees.
+        </div>
+      </div>
+      <div class="">
+        <div class="pb-5 flex justify-center">
+          <img class="w-[260px] h-[260px]" src="image/anh1.jpg" />
+        </div>
+        <div >Đội ngũ</div>
+        <div class="pb-10">
+          This is one of the team member slots you can have for your company.
+          You can replace their picture and add any text you want here for
+          describing your employees.
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="spot" class=" min-h-[800px] justify-center items-center text-center bg-[#ebebeb] ">
+    <div class="text-4xl items-center justify-center pt-[80px] flex pb-[15px] border-b-[6px] border-[#b2583a] mx-[42%]">CONTACT</div>
+    <div class="lg:flex items-center justify-between pt-10 lg:mx-28 pb-6">
+      <div class="mx-5 pb-4">
+        <input
+          id="nameuser"
+          type="text"
+          placeholder="Name"
+        class="lg:w-[250px] w-full h-10 p-5 text-xl "
+        />
+      </div>
+      <div class="mx-5 pb-4">
+        <input
+          id="phoneuser"
+          type="text"
+          placeholder="Phone"
+          class="lg:w-[250px] w-full h-10 p-5 text-xl"
+        />
+      </div>
+      <div class="mx-5 pb-4">
+        <input
+          id="emailuser"
+          type="text"
+          placeholder="Email"
+          class="lg:w-[250px] w-full h-10 p-5 text-xl"
+        />
+      </div>
+      <div class="mx-5 pb-4">
+        <button class="bg-[#b2583a] w-[250px] h-10 " href="#" class="submit" onclick="guiEmail()">
+          CONTACT US
+        </button>
+      </div>
+    </div>
+    <div class="lg:flex pt-10 text-xl  ">
+      <div class="lg:w-1/3 lg:mx-28 ">
+        <div class="flex pb-10 justify-center ">Hanoi,Vietnam</div>
+        <div class="">
+          <div class="flex gap-4 text-[#b2583a] justify-center ">
+            <div><i class="fa-solid fa-phone"></i></div>
+            <div>0395402554</div>
+          </div>
+          <div class="flex gap-4 text-[#b2583a] justify-center ">
+            <div ><i class="fa-solid fa-envelope"></i></div>
+            <div>Newsoco2021@gmail.com</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex justify-center w-full py-8 ">
+        <iframe class="lg:w-[600px] h-[350px] w-[300px] "
+          src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14897.047134379984!2d105.8172995!3d21.0222089!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1svi!2s!4v1666282076168!5m2!1svi!2s"
+       
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </div>
+  </div>
+  <script>
+    function scrollToE(id) {
+      document.getElementById(id).scrollIntoView({ behavior: "smooth" });
+    }
+  </script>
+  <div class="  bg-black text-white h-[200px] pt-10  ">
+    <div class="flex justify-center gap-5 pb-6">
+      <div onclick="scrollToE('top')">Home</div>
+      <div onclick="scrollToE('mid')">About</div>
+      <div onclick="scrollToE('bot')">Services</div>
+      <div onclick="scrollToE('midtobe')">Team</div>
+      <div onclick="scrollToE('spot')">Contact</div>
+    </div>
+    <div >
+      <div class="flex justify-center ">Copyright © 2022 All rights reserved - Silco</div>
+      <div class="flex justify-center ">Powered By Khang - SILCO</div>
+    </div>
+  </div>
+  <script>
+    (function () {
+      emailjs.init("nuQGF_xpg5hYZkcr1");
+    })();
+
+    function guiEmail() {
+      const name = document.querySelector("#nameuser");
+      const phone = document.querySelector("#phoneuser");
+      const email = document.querySelector("#emailuser");
+
+      if (name.value === "") {
+        name.focus();
+        name.placeholder = "Tôi nên gọi bạn bằng...";
+        return;
+      }
+      if (phone.value === "") {
+        phone.focus();
+        phone.placeholder = "Đừng bỏ đi mà không nói lời nào 😥";
+        return;
+      }
+      if (email.value === "" || !email.value.includes("@")) {
+        email.focus();
+        email.placeholder = "Tôi sẽ trả lời bạn qua email...";
+        return;
+      }
+      var params = {
+        name: name.value || "nothing",
+        phone: phone.value || "nothing",
+        email: email.value || "nothing",
+      };
+
+      const serviceID = "service_ogz9a9f";
+      const templateID = "template_auk6bde";
+
+      emailjs
+        .send(serviceID, templateID, params)
+        .then((res) => {
+          console.log(res);
+          name.value = "";
+          phone.value = "";
+          email.value = "";
+        })
+        .catch((err) => console.log(err));
+    }
+  </script>
   </body>
 </html>
