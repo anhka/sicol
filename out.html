@@ -40,23 +40,9 @@
     <style>
       .more:hover .dropdown {
         display: block;
-      }
-      #screen {
-        display: flex;
-        justify-content: space-between;
-        position: relative;
-      }
-
+      }   
       #modal {
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        position: fixed;
-        color: white;
-        background-color: black;
-        animation: modalShow 0.5s;
-        display: none;
+        animation: modalShow 0.5s;        
       }
 
       @keyframes modalShow {
@@ -99,11 +85,7 @@
         display: flex;
         align-items: center;
       }
-      #screen1 {
-        display: flex;
-        justify-content: space-between;
-        position: relative;
-      }
+    
 
       #modal1 {
         top: 0;
@@ -117,15 +99,7 @@
         display: none;
       }
 
-      @keyframes modalShow {
-        0% {
-          transform: translateY(-100%);
-        }
-        100% {
-          transform: translateY(0%);
-        }
-      }
-
+    
       #closemodal1 {
         position: absolute;
         right: 30px;
@@ -174,26 +148,11 @@
         align-items: center;
       }
       #modal2 {
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        position: fixed;
-        color: white;
-        background-color: black;
+      
         animation: modalShow 0.5s;
-        display: none;
       }
 
-      @keyframes modalShow {
-        0% {
-          transform: translateY(-100%);
-        }
-        100% {
-          transform: translateY(0%);
-        }
-      }
-
+    
       #closemodal2 {
         position: absolute;
         right: 30px;
@@ -220,32 +179,13 @@
         gap: 0 75px;
         justify-content: space-between;
       }
-      #screen3 {
-        display: flex;
-        justify-content: space-between;
-        position: relative;
-      }
-
+     
       #modal3 {
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        position: fixed;
-        color: white;
-        background-color: black;
+       
         animation: modalShow 0.5s;
-        display: none;
+       
       }
 
-      @keyframes modalShow {
-        0% {
-          transform: translateY(-100%);
-        }
-        100% {
-          transform: translateY(0%);
-        }
-      }
 
       #closemodal3 {
         position: absolute;
@@ -268,7 +208,7 @@
   </head>
 
   <body>
-    <div id="app" class="overflow-x-hidden">
+    <!-- <div id="app" class="overflow-x-hidden">
       <div
         class="h-[80px] bg-[#EFB59E] flex items-center sticky text-xl pl-[20px] pr-[30px] justify-between"
       >
@@ -315,12 +255,14 @@
         >
           <i class="fas fa-bars"></i>
         </div>
-        <div class="sm:flex gap-[40px] hidden sm:block ">
-          <div id="screen">
+        <div class="sm:flex gap-[40px] hidden sm:block "> -->
+          <div   class="flex justify-between relative"> 
+    
             <div onclick="toggleModal()">
               <i class="fa-solid fa-location-arrow"></i>
             </div>
-            <div id="modal">
+          
+            <div id="modal" class="inset-0 fixed text-white bg-black none ">
               <div onclick="toggleModal()" id="closemodal">&#10006;</div>
               <div id="name">
                 <div class="content">
@@ -344,11 +286,11 @@
               modal.classList.toggle("show");
             }
           </script>
-          <div id="screen1">
+          <div id="screen1" class="flex justify-between relative">
             <div onclick="toggleModal1()">
               <i class="fas fa-share-alt"></i>
             </div>
-            <div id="modal1">
+            <div id="modal1" class="inset-0 fixed text-white bg-black none ">
               <div onclick="toggleModal1()" id="closemodal">&#10006;</div>
               <div id="name1">
                 <div>
@@ -367,11 +309,11 @@
             }
           </script>
 
-          <div id="screen2">
+          <div id="screen2" class="flex justify-between relative">
             <div onclick="toggleModal2()">
               <i class="fa-sharp fa-solid fa-envelope"></i>
             </div>
-            <div id="modal2">
+            <div id="modal2" class="inset-0 fixed text-white bg-black none ">
               <div onclick="toggleModal2()" id="closemodal">&#10006;</div>
               <div id="name2">
                 <div>Contact Us</div>
@@ -493,11 +435,11 @@
             }
           </script>
 
-          <div id="screen3">
+          <div id="screen3" class="flex justify-between relative">
             <div onclick="toggleModal3()">
               <i class="fa-solid fa-phone"></i>
             </div>
-            <div id="modal3">
+            <div id="modal3" class="inset-0 fixed text-white bg-black none ">
               <div onclick="toggleModal3()" id="closemodal">&#10006;</div>
               <div id="name3">Phone : 0969890605</div>
             </div>
@@ -511,7 +453,9 @@
             }
           </script>
         </div>
-        <div class="block sm:hidden flex gap-[10px]">
+
+       
+        <!-- <div class="block sm:hidden flex gap-[10px]">
          
           <div id="screen">
             <div onclick="toggleModal()">
@@ -558,6 +502,6 @@
           </script>  
         </div>
       </div>
-    </div>
+    </div> -->
   </body>
 </html>
