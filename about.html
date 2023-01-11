@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
     <link
       rel="stylesheet"
@@ -259,61 +259,6 @@
       html{
         overflow-x: hidden;
       }
-      .dropbtn {
-       
-        color: black;
-        padding: 12px;
-        border: none;
-        cursor: pointer;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 15px;
-       
-        height: 80px;
-      }
-     
-    
-      .dropdown {
-        
-        display: inline-block;
-        
-       
-      }
-
-      .dropdown-content {
-        display: none;
-        position: absolute;
-        right: 20px;
-        top: 80px;
-        background-color: #f9f9f9;
-    
-       
-        min-width: 160px;
-
-      }
-
-      .dropdown-content a {
-               min-width: 160px;
-
-        padding: 12px 16px;
-        text-decoration: none;
-        display: block;
-        text-align: left;
-        font-size: 15px;
-      }
-
-      .dropdown-content a:hover {
-        background-color: white;
-      }
-
-      .dropdown:hover .dropdown-content {
-        display: block;
-      }
-
-      .dropdown:hover .dropbtn {
-        background-color: #cccccc;
-      }
     </style>
     <link
       rel="stylesheet"
@@ -399,8 +344,8 @@
           <div><a href="/" title="HOME">HOME</a></div>
           <div><a href="/about.html" title="about">ABOUT</a></div>
           <div><a href="/services.html" title="services">SERVICES</a></div>
-          <div><a href="/projects.html" title="PROJECTS">PROJECTS</a></div>
-          <div><a href="/contact.html" title="HOME">CONTACT</a></div>
+          <div><a href="/projects.html" title="projects">PROJECTS</a></div>
+          <div><a href="/contact.html" title="contact">CONTACT</a></div>
         </div>
         <!-- <div class="  w-[70%] block lg:hidden">
             <div
@@ -623,7 +568,7 @@
         </div>
       </div>
       <div
-        class="block lg:hidden flex items-center w-full justify-between items-center mx-5 h-20 " 
+        class="block lg:hidden flex items-center w-full justify-between items-center mx-5"
       >
         <div class="flex justify-between relative">
           <div onclick="toggleModal4()">
@@ -644,7 +589,7 @@
                 <a href="/services.html" title="services">SERVICES</a>
               </div>
               <div class="text-white hover:text-[#EFB59E]">
-                <a href="/projects.html" title="PROJECTS">PROJECTS</a>
+                <a href="/projects.html" title="projects">PROJECTS</a>
               </div>
               <div class="text-white hover:text-[#EFB59E]">
                 <a href="/contact.html" title="HOME">CONTACT</a>
@@ -669,18 +614,7 @@
             <div class="font-bold">Silco</div>
           </div>
         </div>
-        <button class="dropdown  ">
-            <div class="dropbtn">
-              <div><i class="fas fa-ellipsis-v"></i></div></div>
-            <div class="dropdown-content">
-              <a href="#">Merchandise</a>
-              <a href="#">Extras</a>
-              <a href="#">Media</a>
-            </div>
-        </button>
-      </div>
-      
-        <!-- <div class="flex justify-center text-center items-center relative">
+        <div class="flex justify-center text-center items-center relative">
           <div onclick="toggleModal6()">
             <i class="fas fa-ellipsis-v"></i>
           </div>
@@ -902,11 +836,7 @@
             modal6.classList.toggle("show6");
           }
         </script>
-      </div> -->
-
-
-
-
+      </div>
 
       <!-- <div class="flex justify-between relative">
                 <div onclick="toggleModal1()">
@@ -966,390 +896,137 @@
       </div>
     </div> -->
     <!-- block lg:hidden -->
-    <div  class="pt-[80px] relative text-white">
-      <div>
-        <img
-          class="w-[100%] lg:h-[600px] block object-cover bg-cover bg-no-repeat"
-          src="image/anh21.jpg"
-        />
-      </div>
-      <div class="mit">
+    <div id="mid" class="bg-[#fff] min-h-[1000px] py-[50px]">
         <div
-          class="justify-center flex lg:text-8xl font-bold lg:border-y-8 border-y-2 text-3xl my"
+          class="text-4xl items-center justify-center pt-[80px] flex pb-[15px] border-b-[6px] border-[#b2583a] mx-[42%]"
         >
-          SILCO M&E
+          ABOUT
         </div>
-        <div class="justify-center flex lg:text-3xl text-xs pt-7 w-full">
-          Chất lượng-Chuyên nghiệp-Khác biệt
-        </div>
-        <div class="justify-center flex lg:text-2xl text-xs lg:pt-7 pt-2">
-          Hotline : 0969.890.605
-        </div>
-      </div>
-    </div>
-    <div id="mid" class="bg-[#fff] min-h-[1000px] pb-[50px]">
-      <div
-        class="text-4xl items-center justify-center pt-[80px] flex pb-[15px] border-b-[6px] border-[#b2583a] mx-[42%]"
-      >
-        ABOUT
-      </div>
-      <div class="flex pt-[50px] flex-col lg:flex-row gap-[30px]">
-        <div class="lg:pl-[80px] lg:w-[60%] px-[20px]">
-          <li class="text-3xl">
-            Cung cấp các gói dịch vụ: Sửa chữa - Bảo dưỡng
-          </li>
-          <br />- Thiết bị điện - điện lạnh dân dụng. <br />- Thiết bị cấp thoát
-          nước. <br />- Tủ điện công nghiệp. <br />
-          - Bên mình nhận tư vấn, cung cấp, đóng mới, lắp đặt, sửa chữa và cho
-          thuê các loại máy chuyên dụng, thiết bị thi công, thiết bị sửa chữa,
-          liên quan đến các ngành, hệ thống thuộc mảng ME tại các dự án cao
-          tầng, nhà máy, biệt thự, villa, căn hộ... <br />- Điện, nước, chống
-          thấm. <br />-Cấp thoát nước, leo dây tiếp cận. <br />- Xử lý mùi, nâng
-          chuyển. <br />-Cung cấp và cho thuê thiết bị nâng hạ chuyên dụng lắp
-          đặt FCU, ống gió, liên quan đến thi công HVAC... <br />- Xử lý rò rỉ
-          bồn bể lắp ghép tại các toà nhà, nhà máy, khu công nghiệp. <br />-
-          Khoan rút lõi, khoan từ, khoan cắt bê tông, xe đẩy bãi của nhật.
-          <br />- Lắp đặt, bảo trì, sửa chữa máy chiếu, hệ thống lạnh, điện
-          lạnh, head pump, chiller, HVAC. <br />- Khí nén, thủy khí, thủy lực.
-          <br />- Cơ khí chế tạo, nguội sửa chữa, cán ren đường ống cấp nước,
-          cứu hoả. <br />- Thu mua vật tư, máy móc, thiết bị công trình, dự án,
-          nhà máy, hàng thanh lý, phế liệu.... <br />- Cắt Plalga, hàn TIG, TIG
-          lạnh, hàn điện, hàn hơi. <br />- Thi công, bảo trì hệ thống pin năng
-          lượng mặt trời(rooptop, solar farm). <br />- Lắp đặt, bảo trì, sửa
-          chữa các hệ thống bơm, van, quạt công nghiệp, tủ điện, hệ thống rũ
-          bụi, hút bụi cyclone, dây truyền sơn tĩnh điện, băng tải xích vạn
-          hướng... <br />- Đóng mới, sửa chữa bồn, bể, đường ống bằng vật liệu
-          Composite, PVC, PP, HDPE, SUS, Kim Loại. <br />- Chuyển văn phòng,
-          chuyển nhà trọn gói, tháo dỡ hoàn trả mặt bằng.
-        </div>
-  
-        <div class="swiper mySwiper">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <img
-                class="lg:block w-[300px] h-[400px] object-cover"
-                src="image/anh1.jpg"
-              />
-            </div>
-            <div class="swiper-slide">
-              <img
-                class="lg:block w-[300px] h-[400px] object-cover"
-                src="image/anh1.jpg"
-              />
-            </div>
-            <div class="swiper-slide">
-              <img
-                class="block w-[300px] h-[400px] object-cover"
-                src="image/anh1.jpg"
-              />
-            </div>
-            <div class="swiper-slide">
-              <img
-                class="block w-[300px] h-[400px] object-cover"
-                src="image/anh1.jpg"
-              />
-            </div>
-            <div class="swiper-slide">
-              <img
-                class="block w-[300px] h-[400px] object-cover"
-                src="image/anh1.jpg"
-              />
-            </div>
-            <div class="swiper-slide">
-              <img
-                class="block w-[300px] h-[400px] object-cover"
-                src="image/anh1.jpg"
-              />
-            </div>
-            <div class="swiper-slide">
-              <img
-                class="block w-[300px] h-[400px] object-cover"
-                src="image/anh1.jpg"
-              />
-            </div>
-            <div class="swiper-slide">
-              <img
-                class="block w-[300px] h-[400px] object-cover"
-                src="image/anh1.jpg"
-              />
-            </div>
-            <div class="swiper-slide">
-              <img
-                class="block w-[300px] h-[400px] object-cover"
-                src="image/anh1.jpg"
-              />
+        <div class="flex pt-[50px] flex-col lg:flex-row gap-[30px]">
+          <div class="lg:pl-[80px] lg:w-[60%] px-[20px]">
+            <li class="text-3xl">
+              Cung cấp các gói dịch vụ: Sửa chữa - Bảo dưỡng
+            </li>
+            <br />- Thiết bị điện - điện lạnh dân dụng. <br />- Thiết bị cấp thoát
+            nước. <br />- Tủ điện công nghiệp. <br />
+            - Bên mình nhận tư vấn, cung cấp, đóng mới, lắp đặt, sửa chữa và cho
+            thuê các loại máy chuyên dụng, thiết bị thi công, thiết bị sửa chữa,
+            liên quan đến các ngành, hệ thống thuộc mảng ME tại các dự án cao
+            tầng, nhà máy, biệt thự, villa, căn hộ... <br />- Điện, nước, chống
+            thấm. <br />-Cấp thoát nước, leo dây tiếp cận. <br />- Xử lý mùi, nâng
+            chuyển. <br />-Cung cấp và cho thuê thiết bị nâng hạ chuyên dụng lắp
+            đặt FCU, ống gió, liên quan đến thi công HVAC... <br />- Xử lý rò rỉ
+            bồn bể lắp ghép tại các toà nhà, nhà máy, khu công nghiệp. <br />-
+            Khoan rút lõi, khoan từ, khoan cắt bê tông, xe đẩy bãi của nhật.
+            <br />- Lắp đặt, bảo trì, sửa chữa máy chiếu, hệ thống lạnh, điện
+            lạnh, head pump, chiller, HVAC. <br />- Khí nén, thủy khí, thủy lực.
+            <br />- Cơ khí chế tạo, nguội sửa chữa, cán ren đường ống cấp nước,
+            cứu hoả. <br />- Thu mua vật tư, máy móc, thiết bị công trình, dự án,
+            nhà máy, hàng thanh lý, phế liệu.... <br />- Cắt Plalga, hàn TIG, TIG
+            lạnh, hàn điện, hàn hơi. <br />- Thi công, bảo trì hệ thống pin năng
+            lượng mặt trời(rooptop, solar farm). <br />- Lắp đặt, bảo trì, sửa
+            chữa các hệ thống bơm, van, quạt công nghiệp, tủ điện, hệ thống rũ
+            bụi, hút bụi cyclone, dây truyền sơn tĩnh điện, băng tải xích vạn
+            hướng... <br />- Đóng mới, sửa chữa bồn, bể, đường ống bằng vật liệu
+            Composite, PVC, PP, HDPE, SUS, Kim Loại. <br />- Chuyển văn phòng,
+            chuyển nhà trọn gói, tháo dỡ hoàn trả mặt bằng.
+          </div>
+    
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img
+                  class="lg:block w-[300px] h-[400px] object-cover"
+                  src="image/anh1.jpg"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="lg:block w-[300px] h-[400px] object-cover"
+                  src="image/anh1.jpg"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="block w-[300px] h-[400px] object-cover"
+                  src="image/anh1.jpg"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="block w-[300px] h-[400px] object-cover"
+                  src="image/anh1.jpg"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="block w-[300px] h-[400px] object-cover"
+                  src="image/anh1.jpg"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="block w-[300px] h-[400px] object-cover"
+                  src="image/anh1.jpg"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="block w-[300px] h-[400px] object-cover"
+                  src="image/anh1.jpg"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="block w-[300px] h-[400px] object-cover"
+                  src="image/anh1.jpg"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="block w-[300px] h-[400px] object-cover"
+                  src="image/anh1.jpg"
+                />
+              </div>
             </div>
           </div>
-        </div>
-  
-        <!-- Swiper JS -->
-        <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-  
-        <!-- Initialize Swiper -->
-        <script>
-          var swiper = new Swiper(".mySwiper", {
-            spaceBetween: 0,
-            centeredSlides: true,
-            autoplay: {
-              delay: 4500,
-              disableOnInteraction: false,
-            },
-            pagination: {
-              el: ".swiper-pagination",
-              clickable: true,
-            },
-            navigation: {
-              nextEl: ".swiper-button-next",
-              prevEl: ".swiper-button-prev",
-            },
-          });
-        </script>
-      </div>
-    </div>
-    <div id="bot" class=" min-h-[800px] justify-center bg-[#ebebeb] text-center ">
-      <div
-        class="text-4xl items-center justify-center pt-[80px] flex pb-[15px] border-b-[6px] border-[#b2583a] mx-[42%]"
-      >
-        SERVICES
-      </div>
-      <div
-        class="lg:px-[200px] py-[100px] justify-between items-center lg:flex  "
-      >
-        <div class="lg:w-[300px] w-full justify-center items-center pb-8 ">
-          <div class="flex justify-center items-center mb-4">
-            <img
-              class="w-[180px] h-[180px] rounded-full object-cover"
-              src="image/anh16.webp"
-            />
-          </div>
-          <div class="lg:text-2xl font-bold lg:h-[70px]">
-            Thiết bị điện công nghiệp - dân dụng
-          </div>
-          <div class="">Lắp đặt các thiết bị điện gia đình</div>
-          <div>
-            <a
-              href="#"
-              class="bg-[#ac6c53] text-white py-2 px-8 text-align inline-block text-xl mx-0.5 my-5"
-              >LEARN MORE</a
-            >
-          </div>
-        </div>
-        <div class="lg:w-[300px] w-full justify-center items-center pb-8">
-          <div class="flex justify-center items-center mb-4">
-            <img
-              class="w-[180px] h-[180px] rounded-full object-cover"
-              src="image/anh17.webp"
-            />
-          </div>
-          <div class="lg:text-2xl font-bold lg:h-[70px] h-[30px]">
-            Xử lí sự cố ống nước
-          </div>
-          <div>Xử lí các mối hàn rò rỉ, thấm ngấm</div>
-          <div>
-            <a
-              href="#"
-              class="bg-[#ac6c53] text-white py-2 px-8 text-align inline-block text-xl mx-0.5 my-5"
-              >LEARN MORE</a
-            >
-          </div>
-        </div>
-        <div class="lg:w-[300px] w-full justify-center items-center">
-          <div class="flex justify-center items-center mb-4">
-            <img
-              class="w-[180px] h-[180px] rounded-full object-cover"
-              src="image/anh18.webp"
-            />
-          </div>
-          <div class="lg:text-2xl font-bold lg:h-[70px]">
-            Xử lí các sự cố tủ điện, bơm..
-          </div>
-          <div>Thay thế vòng bi, mạch điều khiển</div>
-          <div>
-            <a
-              href="#"
-              class="bg-[#ac6c53] text-white py-2 px-8 text-align inline-block text-xl mx-0.5 my-5"
-              >LEARN MORE</a
-            >
-          </div>
+    
+          <!-- Swiper JS -->
+          <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    
+          <!-- Initialize Swiper -->
+          <script>
+            var swiper = new Swiper(".mySwiper", {
+              spaceBetween: 0,
+              centeredSlides: true,
+              autoplay: {
+                delay: 4500,
+                disableOnInteraction: false,
+              },
+              pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+              },
+              navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+              },
+            });
+          </script>
         </div>
       </div>
-    </div>
-    <div id="midtobe"
-    class="min-h-[800px] justify-center items-center text-center bg-[#fff]"
-  >
-    <div
-      class="text-4xl items-center justify-center pt-[80px] flex pb-[15px] border-b-[6px] border-[#b2583a] mx-[42%]"
-    >
-      PROJECTS
-    </div>
-    <div class="pt-8 justify-between lg:flex items-center gap-10 lg:mx-10 mx-20 pb-10  ">
-      <div class="">
-        <div class="pb-5 flex justify-center ">
-          <img class="w-[260px] h-[260px]" src="image/anh1.jpg" />
+      <div class="  bg-black text-white h-[200px] pt-10  ">
+        <div class="flex justify-center gap-5 pb-6">
+          <div onclick="scrollToE('top')">Home</div>
+          <div onclick="scrollToE('mid')">About</div>
+          <div onclick="scrollToE('bot')">Services</div>
+          <div onclick="scrollToE('midtobe')">Team</div>
+          <div onclick="scrollToE('spot')">Contact</div>
         </div>
-        <div>Đội ngũ</div>
-        <div class="pb-10">
-          This is one of the team member slots you can have for your company.
-          You can replace their picture and add any text you want here for
-          describing your employees.
+        <div >
+          <div class="flex justify-center ">Copyright © 2022 All rights reserved - Silco</div>
+          <div class="flex justify-center ">Powered By Khang - SILCO</div>
         </div>
       </div>
-      <div class="">
-        <div class="pb-5 flex justify-center">
-          <img class="w-[260px] h-[260px]" src="image/anh1.jpg" />
-        </div>
-        <div>Đội ngũ</div>
-        <div class="pb-10">
-          This is one of the team member slots you can have for your company.
-          You can replace their picture and add any text you want here for
-          describing your employees.
-        </div>
-      </div>
-      <div class="">
-        <div class="pb-5 flex justify-center ">
-          <img class="w-[260px] h-[260px]" src="image/anh1.jpg" />
-        </div>
-        <div>Đội ngũ</div>
-        <div class="pb-10">
-          This is one of the team member slots you can have for your company.
-          You can replace their picture and add any text you want here for
-          describing your employees.
-        </div>
-      </div>
-      <div class="">
-        <div class="pb-5 flex justify-center">
-          <img class="w-[260px] h-[260px]" src="image/anh1.jpg" />
-        </div>
-        <div >Đội ngũ</div>
-        <div class="pb-10">
-          This is one of the team member slots you can have for your company.
-          You can replace their picture and add any text you want here for
-          describing your employees.
-        </div>
-      </div>
-    </div>
-  </div>
-  <div id="spot" class=" min-h-[800px] justify-center items-center text-center bg-[#ebebeb] ">
-    <div class="text-4xl items-center justify-center pt-[80px] flex pb-[15px] border-b-[6px] border-[#b2583a] mx-[42%]">CONTACT</div>
-    <div class="lg:flex items-center justify-between pt-10 lg:mx-28 pb-6">
-      <div class="mx-5 pb-4">
-        <input
-          id="nameuser"
-          type="text"
-          placeholder="Name"
-        class="lg:w-[250px] w-full h-10 p-5 text-xl "
-        />
-      </div>
-      <div class="mx-5 pb-4">
-        <input
-          id="phoneuser"
-          type="text"
-          placeholder="Phone"
-          class="lg:w-[250px] w-full h-10 p-5 text-xl"
-        />
-      </div>
-      <div class="mx-5 pb-4">
-        <input
-          id="emailuser"
-          type="text"
-          placeholder="Email"
-          class="lg:w-[250px] w-full h-10 p-5 text-xl"
-        />
-      </div>
-      <div class="mx-5 pb-4">
-        <button class="bg-[#b2583a] w-[250px] h-10 " href="#" class="submit" onclick="guiEmaill()">
-          CONTACT US
-        </button>
-      </div>
-    </div>
-    <div class="lg:flex  text-xl py-8  ">
-      <div class="lg:w-1/3 lg:mx-28 ">
-        <div class="flex pb-10 justify-center ">Hanoi,Vietnam</div>
-        <div class="">
-          <div class="flex gap-4 text-[#b2583a] justify-center ">
-            <div><i class="fa-solid fa-phone"></i></div>
-            <div>0395402554</div>
-          </div>
-          <div class="flex gap-4 text-[#b2583a] justify-center pb-5 ">
-            <div ><i class="fa-solid fa-envelope"></i></div>
-            <div>Newsoco2021@gmail.com</div>
-          </div>
-        </div>
-      </div>
-
-      <div class="flex justify-center w-full  ">
-        <iframe class="lg:w-[600px] h-[350px] w-[300px] "
-          src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14897.047134379984!2d105.8172995!3d21.0222089!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1svi!2s!4v1666282076168!5m2!1svi!2s"
-       
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-        ></iframe>
-      </div>
-    </div>
-  </div>
-  <script>
-    function scrollToE(id) {
-      document.getElementById(id).scrollIntoView({ behavior: "smooth" });
-    }
-  </script>
-  <div class="  bg-black text-white h-[200px] pt-10  ">
-    <div class="flex justify-center gap-5 pb-6">
-      <div onclick="scrollToE('top')">Home</div>
-      <div onclick="scrollToE('mid')">About</div>
-      <div onclick="scrollToE('bot')">Services</div>
-      <div onclick="scrollToE('midtobe')">Projects</div>
-      <div onclick="scrollToE('spot')">Contact</div>
-    </div>
-    <div >
-      <div class="flex justify-center ">Copyright © 2022 All rights reserved - Silco</div>
-      <div class="flex justify-center ">Powered By Khang - SILCO</div>
-    </div>
-  </div>
-  <script>
-    (function () {
-      emailjs.init("nuQGF_xpg5hYZkcr1");
-    })();
-
-    function guiEmaill() {
-      const name = document.querySelector("#nameuser");
-      const phone = document.querySelector("#phoneuser");
-      const email = document.querySelector("#emailuser");
-
-      if (name.value === "") {
-        name.focus();
-        name.placeholder = "Tôi nên gọi bạn bằng...";
-        return;
-      }
-      if (phone.value === "") {
-        phone.focus();
-        phone.placeholder = "Đừng bỏ đi mà không nói lời nào 😥";
-        return;
-      }
-      if (email.value === "" || !email.value.includes("@")) {
-        email.focus();
-        email.placeholder = "Tôi sẽ trả lời bạn qua email...";
-        return;
-      }
-      var params = {
-        name: name.value || "nothing",
-        phone: phone.value || "nothing",
-        email: email.value || "nothing",
-      };
-
-      const serviceID = "service_ogz9a9f";
-      const templateID = "template_auk6bde";
-
-      emailjs
-        .send(serviceID, templateID, params)
-        .then((res) => {
-          console.log(res);
-          name.value = "";
-          phone.value = "";
-          email.value = "";
-        })
-        .catch((err) => console.log(err));
-    }
-  </script>
-  </body>
+</body>
 </html>
